@@ -130,6 +130,17 @@ document.addEventListener('click',(event) => {
   if (destination === 'cabinet' && !appStage.hidden && !appStage.classList.contains('is-open')) beginOpening();
   else navigate(destination);
 });
+document.addEventListener('click', (event) => {
+  const link = event.target.closest('a[href="#ab-story"]');
+  if (!link) return;
+
+  event.preventDefault();
+
+  document.getElementById('ab-story')?.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+});
 window.addEventListener('hashchange', render);
 
 function header() {
