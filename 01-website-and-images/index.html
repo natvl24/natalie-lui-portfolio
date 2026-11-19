@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#eee6de" />
+  <meta name="description" content="Natalie Lui — Building brands through content, community, and creative strategy. A curated collection of work in beauty marketing, social media, community, and analytics." />
+  <title>Natalie Lui — Creative Marketing Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#primary-content">Skip to content</a>
+  <div id="app">
+    <section class="immersive-stage" id="immersive-stage" aria-label="Fogged mirror opening to a beauty cabinet of experiences">
+      <div class="scene-backdrop"></div>
+      <div class="cabinet-content" id="cabinet-content" aria-hidden="true" inert>
+        <div class="cabinet-desktop">
+          <div class="scene-image-wrap">
+            <img src="assets/cabinet-open.png" alt="Open mirrored bathroom cabinet with five beauty products representing Natalie's work" class="open-art" />
+            <div class="hotspots" aria-label="Cabinet products and navigation">
+              <button class="hotspot nav-hotspot work-hotspot" data-route="cabinet" aria-label="Work: explore all projects"><span>Work</span></button>
+              <button class="hotspot nav-hotspot about-hotspot" data-route="about" aria-label="About Natalie"><span>About</span></button>
+              <button class="hotspot nav-hotspot resume-hotspot" data-route="resume" aria-label="View and download Natalie Lui résumé"><span>Resume</span></button>
+              <button class="hotspot nav-hotspot contact-hotspot" data-route="contact" aria-label="Contact Natalie"><span>Contact</span></button>
+              <button class="hotspot project-hotspot krave-hotspot" data-route="project/kravebeauty" aria-label="Open KraveBeauty beauty marketing case study"><span><strong>KraveBeauty</strong><small>Serum</small></span></button>
+              <button class="hotspot project-hotspot ftp-hotspot" data-route="project/for-the-plot" aria-label="Open For The Plot NYC case study"><span><strong>For The Plot NYC</strong><small>Mist</small></span></button>
+              <button class="hotspot project-hotspot creator-hotspot" data-route="project/content-creation" aria-label="Open Content Creation case study"><span><strong>Content Creation</strong><small>Gloss</small></span></button>
+              <button class="hotspot project-hotspot circle-hotspot" data-route="project/circle-hospitality" aria-label="Open Circle Hospitality case study"><span><strong>Circle Hospitality</strong><small>Fragrance</small></span></button>
+              <button class="hotspot project-hotspot jefferies-hotspot" data-route="project/jefferies" aria-label="Open Jefferies case study"><span><strong>Jefferies</strong><small>Cream</small></span></button>
+            </div>
+          </div>
+        </div>
+        <div class="cabinet-mobile">
+          <div class="mobile-panel">
+            <div class="mobile-cabinet-inner">
+              <div class="cabinet-mobile-eyebrow">NATALIE LUI · THE BEAUTY CABINET</div>
+              <nav class="mobile-nav-objects" aria-label="Explore other pages">
+                <button class="mini-nav mini-work" data-route="cabinet" type="button" aria-label="Work"><span class="prop prop-lipstick" aria-hidden="true"><i></i></span><span>WORK</span></button>
+                <button class="mini-nav mini-about" data-route="about" type="button" aria-label="About"><span class="prop prop-compact" aria-hidden="true"><i></i></span><span>ABOUT</span></button>
+                <button class="mini-nav mini-resume" data-route="resume" type="button" aria-label="Résumé"><span class="prop prop-cream" aria-hidden="true"><i></i></span><span>RESUME</span></button>
+                <button class="mini-nav mini-contact" data-route="contact" type="button" aria-label="Contact"><span class="prop prop-perfume" aria-hidden="true"><i></i></span><span>CONTACT</span></button>
+              </nav>
+              <div class="cabinet-glass-top" aria-hidden="true"></div>
+              <div class="mobile-shelf-copy"><span>A curated collection of my work.</span><br />Explore by experience.</div>
+              <div class="mobile-shelf" id="mobile-shelf" aria-label="Five experience products arranged on two glass shelves"></div>
+            </div>
+          </div>
+        </div>
+        <div class="cabinet-tools"><button id="close-cabinet" class="outline-button" type="button">← Close the cabinet</button><span class="hint">Select a product to explore an experience</span></div>
+      </div>
+
+      <div class="mirror-door" id="mirror-door">
+        <div class="mirror-frame">
+          <div class="mirror-glass">
+            <div class="mirror-fog" aria-hidden="true"></div>
+            <div class="water-streaks" aria-hidden="true"></div>
+            <nav class="mirror-nav" aria-label="Main navigation">
+              <button data-route="cabinet">Work</button><button data-route="about">About</button><button data-route="resume">Resume</button><button data-route="contact">Contact</button>
+            </nav>
+            <div class="mirror-copy" id="primary-content">
+              <div class="mirror-eyebrow">A BEAUTY CABINET OF EXPERIENCES</div>
+              <h1>Natalie Lui</h1>
+              <p>Building brands through content, community, and creative strategy</p>
+              <button class="primary-button" id="explore-button" type="button">Explore my work <span aria-hidden="true">↗</span></button>
+            </div>
+            <div class="mirror-heart" aria-hidden="true">♡</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-view" class="page-view" hidden aria-live="polite"></section>
+  </div>
+  <footer class="global-footer" id="global-footer"><span>© <span id="copyright-year"></span> Natalie Lui</span><span>Made with curiosity &amp; intention.</span></footer>
+</body>
+</html>
